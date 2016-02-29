@@ -54,6 +54,9 @@ body {
   background-color: white;
 }
 
+/*--------------------------------------
+    For Invitation
+------------------------------------- */
 .header {
   height: 106px;
   padding: 0 24px;
@@ -145,7 +148,7 @@ body {
   border-bottom-right-radius: 3px;
   padding: 20px;
 }
-.logo {
+.monologo {
   display: none;
 }
 .contact-us {
@@ -201,6 +204,7 @@ body {
   .bubble-text {
     font-size: 18px;
     line-height: 1.3;
+    border-top-left-radius: 0px;
   }
   .bubble-btn {
     font-size: 20px;
@@ -213,10 +217,41 @@ body {
   .footer {
     padding: 30px 60px;
   }
-  .logo {
+  .monologo {
     display: block;
   }
 }
+
+
+/*--------------------------------------
+    For Forgot Password
+------------------------------------- */
+.logo {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #e8ebed;
+}
+.logo img {
+  margin: 24px 29px;
+}
+.guide {
+  color: #516272;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 30px 5px 24px;
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    margin: 24px 80px;
+  }
+  .guide {
+    font-size: 16px;
+    margin: 38px 20px 28px;
+  }
+
+}
+
 /* -------------------------------------
     HEADER, FOOTER, MAIN
 ------------------------------------- */
