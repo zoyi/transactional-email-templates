@@ -50,52 +50,60 @@ body {
 .container {
   margin-top: 80px;
   border-radius: 3px;
-  border: solid, 1px, #e0e3e5;
+  border: 1px solid #e0e3e5;
   background-color: white;
 }
 
 .header {
-  margin: 0 30px;
-  height: 70px;
+  height: 106px;
+  padding: 0 24px;
+}
+.header span {
+  display: block;
+  float: left;
+}
+.emblem {
   text-align: right;
 }
-.header img {
+.emblem img {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-
-.content {
-  display: block;
-  margin: 0 30px 40px;
-}
-
-.avatar {
-  border-radius: 35px;
-}
-
-.chat {
-  margin-left: 20px;
-}
 .host {
+  margin-top: 36px;
+}
+.host-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.host-info {
   font-size: 18px;
-  margin-bottom: 20px;
+  line-height: 20px;
+  margin-left: 11px;
 }
 .host-name {
   color: #516272;
   font-weight: bold;
-  margin-right: 14px;
+  margin-top: 10px;
+  margin-bottom: 11px;
 }
 .host-email {
   color: #00b7ff;
 }
 
+.content {
+  display: block;
+  margin: 20px 0 30px;
+  padding: 0 24px;
+}
+
 .bubble {
-  border-radius: 30px;
-  font-size: 24px;
+  border-radius: 25px;
+  font-size: 15px;
   font-weight: bold;
-  margin-bottom: 10px;
-  padding: 20px 24px;
-  line-height: 1.3;
+  line-height: 18px;
+  padding: 16px 16px;
 }
 .bubble-text {
   background-color: #e8edf2;
@@ -105,39 +113,44 @@ body {
 .bubble-btn {
   display: block;
   background-color: #ff21a3;
-  font-size: 20px;
   color: white;
-  line-height: 24px;
-  padding: 18px 24px;
+  margin: 10px 0;
   text-align: center;
-  width: 100%;
-}
-.bubble-btn {
   text-decoration: none;
+  width: 100%;
 }
 .bubble-btn:hover, .bubble-btn:active {
   text-decoration: none;
   background-color: #e51e92;
 }
-.address {
-  color: #98a7b3;
-  display: block;
+
+.rawlink {
   font-size: 14px;
-  margin: 10px 0;
+  margin: 15px 5px;
+}
+
+.rawlink-text {
+  color: #98a7b3;
+  line-height: 18px;
+}
+.rawlink-address {
+  color: #00b7ff;
+  line-height: 16px;
   text-decoration: none;
-  line-height: 17px;
 }
 
 .footer {
   background-color: #516272;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  padding: 30px;
+  padding: 20px;
 }
-
+.logo {
+  display: none;
+}
 .contact-us {
   margin-left: 20px;
-  width: 70%;
+  width: 80%;
 }
 .groupurl {
   color: white;
@@ -168,6 +181,41 @@ body {
   line-height: 15px;
   margin: 20px 0;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 60px;
+  }
+  .host-info {
+    margin-left: 14px;
+  }
+
+  .content {
+    padding: 0 60px;
+  }
+  .bubble {
+    border-radius: 30px;
+    padding: 16px 24px;
+  }
+  .bubble-text {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .bubble-btn {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .rawlink {
+    margin: 15px 20px 10px;
+  }
+
+  .footer {
+    padding: 30px 60px;
+  }
+  .logo {
+    display: block;
+  }
 }
 /* -------------------------------------
     HEADER, FOOTER, MAIN
@@ -380,23 +428,17 @@ a {
     width: 100% !important;
   }
 
-  .content {
+  /*.content {
     padding: 0 !important;
   }
 
   .content-wrap {
     padding: 10px !important;
-  }
+  }*/
 
   .invoice {
     width: 100% !important;
   }
-}
-
-.avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
