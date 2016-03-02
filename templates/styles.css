@@ -61,18 +61,12 @@ body {
   height: 106px;
   max-width: 484px;
   margin: 0 auto;
+    padding: 0 10px 20px;
 }
-.header span {
-  display: block;
-  float: left;
-}
-.emblem {
-  text-align: right;
-  margin-right: 10px;
-}
-.emblem img {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+.header table {
+  width: 100%;
+  word-break: break-all;
+  border-collapse: collapse;
 }
 .host {
   margin-top: 36px;
@@ -81,27 +75,41 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin-left: 7px;
+  margin-top: 30px;
 }
 .host-info {
   font-size: 18px;
   line-height: 20px;
-  margin-left: 14px;
+  padding-left: 14px;
 }
 .host-name {
   color: #516272;
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 11px;
+  vertical-align: bottom;
+  padding-bottom: 8px;
 }
 .host-email {
   color: #00b7ff;
+  vertical-align: top;
+  text-decoration: none;
+}
+.emblem {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  text-align: right;
+}
+.emblem img {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-bottom: -3px;
 }
 
 .content {
   display: block;
   max-width: 484px;
   margin: 20px auto 30px;
+  padding: 0 10px;
 }
 
 .bubble {
@@ -117,13 +125,12 @@ body {
   line-height: 1.3;
   border-top-left-radius: 0px;
   color: #516272;
-  margin: 0 10px;
 }
 .bubble-btn {
   display: block;
   background-color: #ff21a3;
   color: white;
-  margin: 10px;
+  margin: 10px 0;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -206,36 +213,21 @@ body {
   height: 80px;
   border-bottom: 1px solid #e8ebed;
 }
+.logo-wrapper {
+  max-width: 484px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .logo img {
-  margin: 24px 29px;
+  margin: 24px 20px;
 }
 .guide {
-  margin: 30px 5px 28px;
+  margin: 38px 20px 33px;
 }
 .guide-text {
   color: #516272;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-}
-.guide-newline {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .logo img {
-    margin: 24px 80px;
-  }
-  .guide {
-    margin: 38px 20px 33px;
-  }
-  .guide-text {
-    font-size: 16px;
-  }
-}
-@media (min-width: 360px) {
-  .guide-newline {
-    display: block;
-  }
 }
 
 /* -------------------------------------
