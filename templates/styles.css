@@ -41,7 +41,7 @@ body {
 }
 
 .container-wrap {
-  max-width: 580px !important;
+  max-width: 540px !important;
   margin: 0 auto !important;
   /* makes it centered */
   clear: both !important;
@@ -58,24 +58,26 @@ body {
     For Invitation
 ------------------------------------- */
 .header {
-  height: 106px;
-  max-width: 484px;
+  max-width: 452px;
   margin: 0 auto;
-    padding: 0 10px 20px;
+  padding: 0 10px;
 }
 .header table {
   width: 100%;
   word-break: break-all;
   border-collapse: collapse;
 }
+.td-wrapper{
+  padding: 0;
+}
 .host {
   margin-top: 36px;
 }
 .host-avatar {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin-top: 30px;
+  margin: 30px 0 0;
 }
 .host-info {
   font-size: 18px;
@@ -86,7 +88,9 @@ body {
   color: #516272;
   font-weight: bold;
   vertical-align: bottom;
-  padding-bottom: 8px;
+}
+.email-wrapper {
+  padding-top: 8px;
 }
 .host-email {
   color: #00b7ff;
@@ -94,21 +98,20 @@ body {
   text-decoration: none;
 }
 .emblem {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   text-align: right;
 }
 .emblem img {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  margin-bottom: -3px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .content {
   display: block;
-  max-width: 484px;
-  margin: 20px auto 30px;
+  max-width: 452px;
+  margin: 15px auto 30px;
   padding: 0 10px;
 }
 
@@ -214,7 +217,7 @@ body {
   border-bottom: 1px solid #e8ebed;
 }
 .logo-wrapper {
-  max-width: 484px;
+  max-width: 452px;
   margin: 0 auto;
   padding: 0 10px;
 }
